@@ -13,7 +13,7 @@ sap.ui.define([
 			this.oRouter.getRoute("detail").attachPatternMatched(this._onProductMatched, this);
 			this.oRouter.getRoute("detailDetail").attachPatternMatched(this._onProductMatched, this);
 		},
-		onSupplierPress: function (oEvent) {
+		onSupplierPress: function(oEvent) {
 			var supplierPath = oEvent.getSource().getBindingContext("products").getPath(),
 				supplier = supplierPath.split("/").slice(-1).pop(),
 				oNextUIState;
